@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clock {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.info {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  position: absolute;
+  padding: 2rem;
+  top: 40vh;
+  left: 10vh;
+  border-radius: 10%;
+}
+
+.welcome,
+.date,
+.location {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 1.2rem;
+  padding-left: 2rem;
+}
+
+.time {
+  font-size: 12rem;
+  font-weight: 500;
+}
+
+.timezone {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.location {
+  padding-top: 1rem;
+}
+
+.icon {
+  padding-right: 1rem;
+  font-size: 1.5rem;
+}
+
+.more {
+  position: absolute;
+  right: 10vh;
+  bottom: 10vh;
+  background-color: #fff;
+  width: 180px;
+  border-radius: 20px;
+  height: 50px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.more:focus {
+  outline: none;
+}
+
+.more i {
+  padding-left: 10px;
+  font-size: 1.2rem;
+}
+
+.more-info {
+  height: 30rem;
+  background-color: #aaa;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.statistic {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 4rem;
+  color: #333;
+}
+
+.statistic label {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.statistic p {
+  font-size: 3rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.city-search {
+  width: 40%;
+  margin-left: 4rem;
+  margin-top: 2rem;
+  height: 3rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  padding-left: 1rem;
+  color: #fff;
+}
+
+.city-search:focus {
+  outline: none;
+}
+
+.city-search::placeholder {
+  color: #fff;
+}
+
+.local-search {
+  width: 20%;
+  background-color: rgba(255, 102, 0, 0.7);
+  margin-left: 3rem;
+  height: 3rem;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.local-search:focus {
+  outline: none;
+}
+
+.autocomplete {
+  max-height: 12rem;
+  overflow-y: scroll;
+  width: 40%;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 12%;
+  left: 5%;
+  border-radius: 20px;
+  color: #fff;
+}
+
+.option {
+  height: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.option:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+.city-select {
+  padding-left: 1rem;
+}
+
+.country {
+  color: #c0c0c0;
+  font-weight: 100;
+  padding-right: 1rem;
+}

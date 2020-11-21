@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>World Clock</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/b4e0f9128b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Clock -->
+
+    <section class="clock">
+      <div class="search-region">
+        <div class="search">
+          <input
+            type="text"
+            class="city-search"
+            placeholder="Search for a City or Country..."
+          />
+          <button class="local-search">Find my local time</button>
+        </div>
+
+        <!-- City Search Autocomplete -->
+
+        <div class="autocomplete hidden"></div>
+      </div>
+
+      <div class="info">
+        <div class="welcome">
+          <span class="icon"><i class="fas fa-sun"></i></span>Good
+          <span class="time-of-day"></span>
+        </div>
+        <div class="time">
+          <span class="hours"></span><span class="colon">:</span
+          ><span class="mins"></span><span class="timezone">GMT</span>
+        </div>
+        <div class="date"></div>
+        <div class="location">In <span class="city"></span></div>
+      </div>
+
+      <button class="more">
+        <span class="button-text">More</span><i class="fas fa-chevron-down"></i>
+      </button>
+    </section>
+
+    <!-- More Info Section -->
+
+    <section class="more-info hidden">
+      <div class="statistic current-timezone">
+        <label>Current Timezone</label>
+        <p></p>
+      </div>
+      <div class="statistic day-of-year">
+        <label>Day of the Year</label>
+        <p></p>
+      </div>
+      <div class="statistic day-of-week">
+        <label>Day of this Week</label>
+        <p></p>
+      </div>
+      <div class="statistic week-num">
+        <label>Week Number</label>
+        <p></p>
+      </div>
+    </section>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
